@@ -43,7 +43,7 @@ jobs:
           username: deploy
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "simple-flask.tar"
-          target: "~/simple-flask.tar"
+          target: "~/"
 
       # Auf dem Server laden & Container starten
       - name: Load Docker Image & Run Container
